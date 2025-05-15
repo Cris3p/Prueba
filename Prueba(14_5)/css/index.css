@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+display: grid;
+place-items: center;
+background: #ffffff;
+}
+.contenedor{
+    display: grid;
+    place-items: center;
+    width: 450px;
+}
+.cont-web{
+    display: grid;
+    place-items: center;
+    width: 330px;
+}
+.usuario{
+width: 352px;
+height: 50px;
+
+}
+.foto{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("https://media.tenor.com/nooZTxe5hgoAAAAe/kasane-teto-teto.png");
+    background-size: contain;
+}
+.perfil{
+position:absolute;
+width: 235px;
+font-family: 'Actor';
+font-style: normal;
+
+font-size: 14px;
+line-height: 50px;
+text-align: center;
+color: #FF453A;
+
+}
+.not{
+position: absolute;
+width: 30px;
+height: 30px ;
+left:62%;
+top: 15px;
+background: url(../img/noti.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+input[type="text"]{
+width: 350px;
+height: 45px;
+background-color:antiquewhite;
+border: 1px solid rgba(153, 153, 153, 0.13);
+box-shadow: 0px 2px 20px -6px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+padding-left: 1em;
+}
+
+.muestra{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.listProd{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+.listProd span{
+    color: white;
+    background: #000000;
+    border-radius: 20px;
+    font-size: 20px;
+}  
+
+.img1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 50px;
+}
+
+.img1 img{
+    width:90px; 
+    height:90px;
+    background: #000000;
+    box-shadow: 0px 2px 16px -5px rgba(0, 0, 0, 0.8); 
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
