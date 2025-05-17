@@ -8,9 +8,18 @@ body{
   font-family: 'Arial', sans-serif;
   background: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+header{
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 20px;
+
 }
 .contenedor{
     display: flex;
@@ -19,6 +28,7 @@ body{
     width: 100%;
     max-width: 430px;
     padding: 1rem;
+    gap: 10px;
 }
 .cont-web{
   max-width: 430px;
@@ -28,10 +38,12 @@ body{
 .usuario{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   width: 100%;
   margin-bottom: 10px;
+  gap: 10px;
+  margin-bottom: 0;
 }
 .foto{
   width: 40px;
@@ -41,10 +53,9 @@ body{
   background-size: cover;
 }
 .perfil{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
+  position: static;
+transform: none;
+  font-size: 16px;
   color: #FF453A;
 }
 
@@ -120,7 +131,6 @@ padding-left: 1em;
 }
 
 .search {
-  position: relative;
   width: 100%;
 }
 
