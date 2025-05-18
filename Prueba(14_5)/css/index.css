@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +27,6 @@ header {
   align-items: center;
   width: 100%;
   max-width: 430px;
-  padding: 1rem;
   gap: 10px;
 }
 
@@ -42,10 +42,11 @@ header {
 .info-usuario {
   display: flex;
   align-items: center;
-  gap: 10px; }
+  gap: 10px;
+}
 
 .foto {
- width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   background-image: url("https://media.tenor.com/nooZTxe5hgoAAAAe/kasane-teto-teto.png");
@@ -69,7 +70,6 @@ header {
 .search {
   width: 100%;
   position: relative;
-  
 }
 
 .search input {
@@ -77,9 +77,9 @@ header {
   height: 45px;
   border-radius: 20px;
   border: none;
-  background: #f6dada;
+  background: #ffffff;
   padding-left: 2.5em;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.445);
 }
 
 .icon-search {
@@ -89,7 +89,7 @@ header {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url('../img/search-icon.png'); /* Usa una imagen real */
+  background-image: url('../img/search-icon.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -98,21 +98,21 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .img1 {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 120%;
+  margin-top: 0.3rem;
 }
 
 .img1 img {
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: black;
-  padding: 5px;
+  padding: 10px;
   object-fit: contain;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -121,8 +121,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 0.5rem;
+  width: 120%;
+  margin-top: 0.7rem;
   font-weight: bold;
   font-size: 14px;
   color: black;
@@ -132,45 +132,65 @@ header {
   background: #000;
   color: #fff;
   border-radius: 20px;
-  padding: 4px 10px;
-  width: 90px;
+  white-space: nowrap;
+  padding: 6px 4px;
+  width: 96px;
   text-align: center;
 }
 
+.novedades{
+  width: 100%;
+  place-items: center;
+}
+.barra{
+  width: 200px;
+  height: 1.88px;
+  background-color: #8080804D;
+  margin: 10px 0;
+}
 .novedades h3 {
-  text-align: center;
-  font-weight: bold;
-  margin: 1rem 0;
+    height: 30px;
+    color: #29292970;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .productos {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .producto {
   background: #fff;
+  height: 150%;
   border-radius: 20px;
-  padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   flex: 1 1 45%;
-  min-width: 140px;
-  max-width: 180px;
+  position: relative;
+  min-height: 300px;
 }
 
 .producto img {
-  width: 100px;
-  height: 100px;
+  width: 160px;        
+  height: 180px;
   object-fit: contain;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nuevo {
   color: red;
   font-size: 12px;
   margin-top: 0.5rem;
+}
+
+#precio {
+  color: gray;
+  font-size: 12px;
 }
 
 .producto button {
@@ -231,7 +251,8 @@ header {
 .nav-item img {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1); /* white icons */
+  filter: brightness(0) invert(1);
+  /* white icons */
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -239,4 +260,3 @@ header {
 .nav-item img:hover {
   transform: scale(1.1);
 }
-
